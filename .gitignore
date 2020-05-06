@@ -1,23 +1,23 @@
 authors-service/vendor
 authors-service/.idea
-authors-serviceHomestead.json
-authors-serviceHomestead.yaml
+authors-service/Homestead.json
+authors-service/Homestead.yaml
 authors-service/.env
 authors-service/database/database.sqlite
 
 
 books-service/vendor
 books-service/.idea
-books-serviceHomestead.json
-books-serviceHomestead.yaml
-books-service.env
+books-service/Homestead.json
+books-service/Homestead.yaml
+books-service/.env
 books-service/database/database.sqlite
 
 apiGateway-service/vendor
 apiGateway-service/.idea
-apiGateway-serviceHomestead.json
-apiGateway-serviceHomestead.yaml
-apiGateway-service.env
+apiGateway-service/Homestead.json
+apiGateway-service/Homestead.yaml
+apiGateway-service/.env
 apiGateway-service/database/database.sqlite
 
 apiGateway-service/storage/*key
