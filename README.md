@@ -2,20 +2,20 @@
 ## description: 
 this app has three **micro services** - authors, books and api gateway - all the services connected with each other by **laravel passport** and are built by **lumen** micro framework.
 
-##how to run :
-###1- install dependencies:
+## how to run :
+### 1- install dependencies:
 go to every service and install its dependencies,
 for example :
 > path/to/authors/services> composer install 
  
-###2- .env:
+### 2- .env:
 take a copy of .env.example file from each service and rename to .env
 
-###3- generate apps keys:
+### 3- generate apps keys:
 generate 3 keys for APP_KEY variable in .env in each service, 
 you can use this site [string generator](http://www.unit-conversion.info/texttools/random-string-generator/)
  with key length 32
- ###4- secret keys:
+ ### 4- secret keys:
  from the previous site generate new key with length 32 and put it in apiGateWay-service/.env file in AUTHOR_SERVICE_SECRET const, for example:
  >AUTHOR_SERVICE_SECRET=ppWFtcqtZ8wWossANcc8CH3YaH78jT6d  
 
@@ -24,7 +24,7 @@ then take that key and put it in authors-service/.env file in ACCEPTED_SECRETS, 
 
 -repeat the same steps for books-service and any other services if there are others in future.
 
-###5- database: 
+### 5- database: 
 in ***each service*** create database.sqlite file in database directory.
 then in each service run:
 >php artisan migrate --seed
@@ -32,8 +32,8 @@ then in each service run:
 then just in the apiGateway-service to active run :  
 >php artisan passport:install
 
-###6- finally play with it: 
-to be able to send requests just
+### 6- finally play with it: 
+to be able to send requests just:<br>
 1- run in authors-service:
 >php -S localhost:8000 -t ./public
 
