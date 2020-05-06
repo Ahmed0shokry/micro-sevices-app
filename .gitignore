@@ -2,7 +2,7 @@ authors-service/vendor
 authors-service/.idea
 authors-serviceHomestead.json
 authors-serviceHomestead.yaml
-authors-service.env
+authors-service/.env
 authors-service/database/database.sqlite
 
 
@@ -20,4 +20,5 @@ apiGateway-serviceHomestead.yaml
 apiGateway-service.env
 apiGateway-service/database/database.sqlite
 
-
+apiGateway-service/storage/*key
+apiGateway-service/notes.txt
